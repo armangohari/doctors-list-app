@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import "@/styles/globals.css";
 import { poppins } from "@/lib/fonts";
 import { cn } from "@/utils/helpers";
+import type { Metadata } from "next";
+
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Doctors List App",
