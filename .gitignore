@@ -37,3 +37,7 @@ yarn-error.log*
 
 # vscode
 .vscode
+
+# prisma
+/prisma/migrations
+/prisma/*.db
