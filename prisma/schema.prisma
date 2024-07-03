@@ -1,0 +1,26 @@
+datasource db {
+    provider = "sqlite"
+    url      = "file:./doctor-list-app.db"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Doctor {
+    id             Int       @id @default(autoincrement())
+    name           String
+    email          String    @unique
+    specialization String
+    profileImage   String
+    numOfLikes     Int       @default(0)
+    comments       Comment[]
+}
+
+model Comment {
+    id        Int      @id @default(autoincrement())
+    doctorId  Int
+    content   String
+    createdAt DateTime @default(now())
+    doctor    Doctor   @relation(fields: [doctorId], references: [id])
+}
