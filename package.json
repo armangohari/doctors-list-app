@@ -1,14 +1,20 @@
 {
   "name": "doctors-list-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "database": "npm run generate && npm run migrate && npm run seed",
+    "generate": "npx prisma generate",
+    "migrate": "npx prisma migrate dev --name init",
+    "seed": "node prisma/seed.js"
   },
   "dependencies": {
+    "@prisma/client": "^5.16.1",
+    "axios": "^1.7.2",
     "clsx": "^2.1.1",
     "next": "14.2.3",
     "react": "^18",
@@ -24,6 +30,7 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
+    "prisma": "^5.16.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
