@@ -7,8 +7,25 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "smooth-black": "#374151",
+        "smooth-white": "#f5f5f5",
+        "cream-white": "#FCFBF4",
+      },
+      keyframes: {
+        shimmer: {
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+      },
+      animation: {
+        shimmer: "shimmer 1.5s infinite",
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
 };
+
 export default config;
