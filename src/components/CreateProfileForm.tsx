@@ -2,7 +2,7 @@
 
 import { axiosBase } from "@/axios/config";
 import { cn } from "@/utils/helpers";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 type CreateProfileFormType = {
   name: string;
@@ -22,7 +22,7 @@ export default function CreateProfileForm() {
     setFormState((prevState) => ({ ...prevState, [name]: value }));
   }
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit() {
     const newDoctor = {
       name: formState.name,
       email: formState.email,
@@ -41,7 +41,7 @@ export default function CreateProfileForm() {
   return (
     <form
       className="flex w-full min-w-[340px] flex-col gap-8 rounded-2xl bg-green-500/10 p-8 xl:max-w-96"
-      onSubmit={(e) => handleSubmit(e)}
+      onSubmit={handleSubmit}
     >
       {/* Form Title */}
       <h1 className="my-4 text-center text-3xl font-extrabold">
