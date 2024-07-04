@@ -14,13 +14,14 @@ model Doctor {
     specialization String
     profileImage   String
     numOfLikes     Int       @default(0)
+    numOfComments  Int       @default(0)
     comments       Comment[]
 }
 
 model Comment {
-    id        Int      @id @default(autoincrement())
+    id        Int    @id @default(autoincrement())
     doctorId  Int
     content   String
-    createdAt DateTime @default(now())
-    doctor    Doctor   @relation(fields: [doctorId], references: [id])
+    createdAt String
+    doctor    Doctor @relation(fields: [doctorId], references: [id])
 }

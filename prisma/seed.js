@@ -11,6 +11,7 @@ async function main() {
         specialization: "Neuroscientist",
         profileImage: doctorProfile,
         numOfLikes: 63,
+        numOfComments: 0,
       },
       {
         name: "Jason Washington",
@@ -18,6 +19,7 @@ async function main() {
         specialization: "Brain Surgeon",
         profileImage: doctorProfile,
         numOfLikes: 79,
+        numOfComments: 0,
       },
       {
         name: "William Nelson",
@@ -25,6 +27,7 @@ async function main() {
         specialization: "Anesthesiologist",
         profileImage: doctorProfile,
         numOfLikes: 34,
+        numOfComments: 0,
       },
       {
         name: "Maria Brown",
@@ -32,6 +35,7 @@ async function main() {
         specialization: "Radiologist",
         profileImage: doctorProfile,
         numOfLikes: 28,
+        numOfComments: 0,
       },
       {
         name: "Anna Reynold",
@@ -39,6 +43,7 @@ async function main() {
         specialization: "Heart Surgeon",
         profileImage: doctorProfile,
         numOfLikes: 53,
+        numOfComments: 0,
       },
       {
         name: "Elizabeth Turner",
@@ -46,6 +51,7 @@ async function main() {
         specialization: "Pediatrician",
         profileImage: doctorProfile,
         numOfLikes: 47,
+        numOfComments: 0,
       },
       {
         name: "Michael Clarke",
@@ -53,6 +59,7 @@ async function main() {
         specialization: "Orthopedic Surgeon",
         profileImage: doctorProfile,
         numOfLikes: 62,
+        numOfComments: 0,
       },
       {
         name: "Sophia Martinez",
@@ -60,6 +67,7 @@ async function main() {
         specialization: "Dermatologist",
         profileImage: doctorProfile,
         numOfLikes: 51,
+        numOfComments: 0,
       },
       {
         name: "David Johnson",
@@ -67,6 +75,7 @@ async function main() {
         specialization: "Cardiologist",
         profileImage: doctorProfile,
         numOfLikes: 68,
+        numOfComments: 0,
       },
     ],
   });
