@@ -7,7 +7,8 @@ This app lists 9 initial doctors with the ability to sort them by alphabetical o
 - Responsiveness for mobile, tablet and desktop devices.
 - Ability to create new doctor profiles.
 - Ability to search doctors based on their names.
-- Ability to add new comments to each doctor
+- Ability to add new comments to each doctor.
+- Ability to view added comments for each doctor on the doctor card.
 - Interactive comment icon in which it will alter if the comment textarea is empty or not or if its expanded or collapsed.
 - Enrich with multiple sorting methods
     - Alphabetical (A - Z)
