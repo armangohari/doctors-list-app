@@ -20,3 +20,31 @@ export function cn(...inputs: ClassValue[]): string {
 export function capitalizeWords(str: string): string {
   return str.replace(/\b\w/g, (char) => char.toUpperCase());
 }
+
+/**
+ * Formats a Date object into a string with the format "weekday year-month-day hour:minute".
+ *
+ * The formatting includes:
+ * - Full name of the weekday (e.g., "Wednesday").
+ * - Four-digit year (e.g., "2024").
+ * - Two-digit month (e.g., "07" for July).
+ * - Two-digit day (e.g., "04").
+ * - Two-digit hour in 24-hour format (e.g., "14").
+ * - Two-digit minute (e.g., "30").
+ *
+ * @param {Date} date - The Date object to be formatted.
+ * @returns {string} - A formatted string representing the date.
+ */
+export function formatDate(date: Date): string {
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: "long",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  };
+
+  return date.toLocaleString("en-US", options);
+}
