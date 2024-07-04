@@ -2,7 +2,7 @@
 
 import { axiosBase } from "@/axios/config";
 import { cn } from "@/utils/helpers";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProfileCard, { type doctorType } from "./ProfileCard";
 import ProfileCardSkeletonWrapper from "./skeletons/ProfileCardSkeletonWrapper";
 
