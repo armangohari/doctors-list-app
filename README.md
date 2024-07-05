@@ -9,18 +9,19 @@ Desktop View             |  Mobile View
 
 
 ## Features
-- Implemented considering rich UI/UX methods.
-- Responsiveness for mobile, tablet and desktop devices.
-- Ability to create new doctor profiles.
-- Ability to search doctors based on their names.
-- Ability to add new comments to each doctor.
-- Ability to view added comments for each doctor on the doctor card.
-- Interactive comment icon in which it will alter if the comment textarea is empty or not or if its expanded or collapsed.
-- Enrich with multiple sorting methods
-    - Alphabetical (A - Z)
-    - Alphabetical (Z - A)
-    - Likes (Highest First)
-    - Likes (Lowest First)
+- **UI/UX Implementation**: Implemented considering rich UI/UX methods.
+- **Responsiveness**: Responsiveness for mobile, tablet, and desktop devices.
+- **Profile Creation**: Ability to create new doctor profiles.
+- **Doctor Search**: Ability to search doctors based on their names.
+- **Comment Addition**: Ability to add new comments to each doctor.
+- **Comment Viewing**: Ability to view added comments for each doctor on the doctor card.
+- **Interactive Comment Icon**: Interactive comment icon that alters if the comment textarea is empty or not, or if it’s expanded or collapsed.
+- **Multiple Sorting Methods**:
+    - **Alphabetical (A - Z)**: Sort doctors alphabetically from A to Z.
+    - **Alphabetical (Z - A)**: Sort doctors alphabetically from Z to A.
+    - **Likes (Highest First)**: Sort doctors by likes, highest first.
+    - **Likes (Lowest First)**: Sort doctors by likes, lowest first.
+
 
 ## Tech Stack
 - Next.js
@@ -31,8 +32,10 @@ Desktop View             |  Mobile View
 - SQLite
 
 ## Requirements
-- `NodeJS v20+`
-- `npm v10+`
+- [NodeJS v20+](https://nodejs.org/en/download/package-manager)  (npm included)
+- npm v10+
+- [SQLite v3+](https://www.sqlite.org/download.html)
+
 
 ## How to Use
 
